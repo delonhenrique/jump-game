@@ -39,6 +39,7 @@
     }
 }
 
+
 .pipe {
     position: absolute;
     width: 80px;
@@ -50,7 +51,7 @@
     from {
         right: -80px;
     }
-
+    
     to {
         right: 100%;
     }
@@ -70,8 +71,37 @@
     0%, 100% {
         bottom: 0;
     }
-
+    
     40%, 50%, 60% {
         bottom: 180px;
     }
+}
+
+.counter {
+    position: absolute;
+    left: 40%;
+    top: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 25px;
+    border: 5px inset rgb(153, 94, 231);
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.0rem;
+}
+
+.game-over, .play-again {
+    position: absolute;
+    width: 200px;
+    left: 40%;
+    top: 150px;
+}
+
+.play-again {
+    top: 250px;
+}
+
+.play-again:hover {
+    cursor: pointer;
 }
